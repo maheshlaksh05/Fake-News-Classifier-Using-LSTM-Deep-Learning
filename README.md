@@ -5,6 +5,8 @@ ong Short Term Memory:
 Before getting into LSTM, let’s understand quickly what RNN does?
 
 RNN is a type of supervised deep learning algorithm. Here, the neurons are connected to themselves through time. The idea behind RNN is to remember what information was there in the previous neurons so that these neurons could pass information to themselves in the future for further analysis. It means that the information from a specific time instance (t1) is used as an input for the next time instance(t2). This is the idea behind RNN.
+![image](https://user-images.githubusercontent.com/97341259/151926209-66d5d85c-4e32-462e-a26c-0e364cf6ece8.png)
+
 
 lstm architecture
 Image source link: https://en.wikipedia.org/wiki/File:Recurrent_neural_network_unfold.svg
@@ -19,6 +21,8 @@ backpropagation | lstm
 Image source link: https://www.techleer.com/articles/185-backpropagation-through-time-recurrent-neural-network-training-technique/
 
 Example: Let’s say from the above diagram that we have calculated the error at time instance (t3). To update the weights of all the neurons that have participated in calculating the output at time instance(t3), we need to propagate through time till time instance (t0).
+![image](https://user-images.githubusercontent.com/97341259/151926245-172138cf-42ed-4269-822f-43007648c877.png)
+![image](https://user-images.githubusercontent.com/97341259/151926276-c9f0fa6b-972d-4558-98dd-32d153604ed7.png)
 
 In a nutshell, if the sequence is long, then RNN finds it difficult to carry information from a particular time instance to an earlier one because of the vanishing gradient problem.
 
